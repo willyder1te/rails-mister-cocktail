@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 require 'open-uri'
-require 'byebug'
+
 puts "Number of Ingredients: #{Ingredient.all.count} should be 0"
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
