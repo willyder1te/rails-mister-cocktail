@@ -9,4 +9,7 @@
 
 console.log('Hello World from Webpacker')
 import { loadDynamicBannerText } from '../components/banner';
+
+import { selector_pretty } from '../components/select2';
+selector_pretty();
 loadDynamicBannerText();
