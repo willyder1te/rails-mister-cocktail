@@ -1,0 +1,21 @@
+<h1 class="text-center">All our amazing cocktails:</h1>
+
+<div class="container">
+  <div class="row">
+
+      <% @cocktails.each do |cocktail|%>
+
+          <div class="col-xs-12 col-sm-4">
+
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1515757026668-f01a7685f66e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b19d9d199b41095b19a35aabff06d6d&auto=format&fit=crop&w=750&q=80');">
+              <div class="card-description">
+                <h2><%= cocktail.name %></h2>
+                <p><%= cocktail.all_ingredients %></p>
+              </div>
+              <%= link_to "", cocktail_path(cocktail),class:"card-link" %>
+            </div>
+          </div>
+      <% end %>
+   </div>
+
+</div>
