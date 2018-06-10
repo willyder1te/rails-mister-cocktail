@@ -1,7 +1,11 @@
-<h1>Create a new cocktail</h1>
-<%= simple_form_for @cocktail do |c| %>
-  <%= c.input :name, class:"form-control"%>
-  <%= c.input :photo %>
-  <%= c.input :photo_cache, as: :hidden %>
-  <%= c.button :submit, class:"btn-primary" %>
-<% end %>
+<h1 class="text-center">Create a new cocktail</h1>
+<div class="container--form">
+  <div class="form--doses">
+    <%= simple_form_for @cocktail do |c| %>
+      <%= c.input :name, class:"form-control"%>
+      <%= c.input :photo %>
+      <%= c.input :photo_cache, as: :hidden %>
+      <%= c.button :submit, class:"btn-primary" %>
+    <% end %>
+ </div>
+</div>
